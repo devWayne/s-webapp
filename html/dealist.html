@@ -17,16 +17,16 @@
 		<span class="nav-tag-border"></span>
 		<span class="nav-countdown">
 			距开抢
-				<span class='transfer-hour'>10</span>
+				<span class='transfer-hour'></span>
 			时
-			<span class='transfer-minute'>30</span>
+			<span class='transfer-minute'></span>
 			分
-			<span class='transfer-second'>50</span>
+			<span class='transfer-second'></span>
 			秒
 		</span>
 	</div>
 	<div class="miaosha-deal-content">
-		<ul>
+		<ul class="J-deal-content">
 			<li class="clearfix">
 				<a href="">
 					<img src="../css/img/appa_03.png" alt="">
@@ -75,31 +75,7 @@
 	</div>
 	<div style="border:6px solid rgb(240,240,240)"></div>
 	<!--下期预告-->
-	<div class="nav">
-		<span class="nav-tag">下期预告</span>
-		<span class="nav-tag-border"></span>
-		<span class="nav-countdown">
-			9月22日 11:11 开枪
-		</span>
-	</div>
-	<div class="miaosha-deal-content-end">
-		<ul>
-			<li class="clearfix">
-				<a href="">
-					<img src="../css/img/appa_03.png" alt="">
-					<div class="miaosha-deal-text">
-						<p class="miaosha-deal-title">食之密</p>
-						<p class="miaosha-deal-intro">全国通用代金卷1张</p>
-						<div class="miaosha-deal-price">
-							<span class='nowprize'>￥1</span>
-							<span class="del">￥999</span>
-							<span class="wantbuy"><span>1222人</span>想买</span>
-						</div>
-					</div>
-				</a>
-			</li>
-		</ul>
-	</div>
+	<div class="miaosha-deal-content J-next-deal-content"></div>
 	
 	<!--活动规则-->
 	<div>
@@ -117,7 +93,10 @@
 		  base: "/js/",
 		  alias: {
 		    "zepto": "vendor/zepto.js",
-		    "share": "module/share.js"
+		    "mustache":"vendor/mustache.js",
+		    "share": "module/share.js",
+		   	"countdown":"module/countdown.js",
+		   	"dealistTpl":"template/dealist-template.js"
 		  }
 		})
 		// 加载入口模块
