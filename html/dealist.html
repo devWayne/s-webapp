@@ -27,55 +27,21 @@
 	</div>
 	<div class="miaosha-deal-content">
 		<ul class="J-deal-content">
-			<li class="clearfix">
-				<a href="">
-					<img src="../css/img/appa_03.png" alt="">
-					<div class="miaosha-deal-text">
-						<p class="miaosha-deal-title">食之密</p>
-						<p class="miaosha-deal-intro">全国通用代金卷1张全国通用代金卷1张</p>
-						<div class="miaosha-deal-price">
-							<span class="oneprize nowprize">￥1</span>
-							<span class="twoprize del">￥111</span>
-							<!-- <span class="buyflag"><button class='soldout' href="">开抢</button></span> -->
-							<span class="buyflag wantbuy"><span>1222人</span>想买</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="clearfix">
-				<a href="">
-					<img src="../css/img/appa_03.png" alt="">
-					<div class="miaosha-deal-text">
-						<p class="miaosha-deal-title">食之密</p>
-						<p class="miaosha-deal-intro">全国通用代金卷1张</p>
-						<div class="miaosha-deal-price">
-							<span class="oneprize nowprize">￥1</span>
-							<span class="twoprize del">￥999</span>
-							<!-- <span class="buyflag wantbuy">已抢光</span> -->
-							<span class="buyflag wantbuy"><span>1222人</span>想买</span>
-						</div>
-					</div>
-				</a>
-			</li>
-			<li class="clearfix">
-				<a href="">
-					<img src="../css/img/appa_03.png" alt="">
-					<div class="miaosha-deal-text">
-						<p class="miaosha-deal-title">食之密</p>
-						<p class="miaosha-deal-intro">全国通用代金卷1张</p>
-						<div class="miaosha-deal-price">
-							<span class='oneprize nowprize'>￥1</span>
-							<span class="twoprize del"><del>￥999</del></span>
-							<span class="buyflag wantbuy"><span>1222人</span>想买</span>
-						</div>
-					</div>
-				</a>
-			</li>
 		</ul>
 	</div>
 	<div style="border:6px solid rgb(240,240,240)"></div>
 	<!--下期预告-->
-	<div class="miaosha-deal-content J-next-deal-content"></div>
+	<div class="nav">
+			<span class="nav-tag">下期预告</span>
+			<span class="nav-tag-border"></span>
+			<span class="nav-countdown">9月22日 11:11 开抢</span>
+	</div>
+					
+
+	<div class="miaosha-deal-content">
+		<ul class=" J-next-deal-content">
+		</ul>
+	</div>
 	
 	<!--活动规则-->
 	<div>
@@ -96,7 +62,8 @@
 		    "mustache":"vendor/mustache.js",
 		    "share": "module/share.js",
 		   	"countdown":"module/countdown.js",
-		   	"dealistTpl":"template/dealist-template.js"
+		   	"dealistTpl":"template/dealist-template.js",
+		   	"jsonData":"page/json.js"
 		  }
 		})
 		// 加载入口模块
