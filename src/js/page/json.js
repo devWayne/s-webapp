@@ -48,7 +48,7 @@
 				currentJoin: 5,
 				maxJoin: 10
 			}, {
-				currentJoin: 5,
+				currentJoin: 10,
 				maxJoin: 10
 			}, {
 				currentJoin: 5,

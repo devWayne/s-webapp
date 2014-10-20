@@ -50,7 +50,18 @@ function realTimeInfo() {
 
 	})*/
 	var jsonRealInfo = jsonData.realTimeInfo;
-	isOpen=new Date(jsonRealInfo.currentTime).getTime)>beginTime
+	isOpen=new Date(jsonRealInfo.currentTime).getTime()>new Date(beginTime).getTime();
+	var realDealInfo=jsonRealInfo.realDeals[0].realDealInfo;
+	$('.J-deal-content').children().each(function(idx,elem){
+		if(isOpen){
+			if(realDealInfo[idx].maxJoin&&realDealInfo[idx].maxJoin-realDealInfo[idx].currentJoin>0){
+				$(elem).find('.miaosha-deal-price').append('<span class="wantbuy"><button class="soldout" href="#">开抢</button></span>');
+			}
+			else{
+				$(elem).find('.miaosha-deal-price').append('<span class="wantbuy">已抢光</span>');
+			}
+		}
+	});
 	_countdown.stop();
 	_countdown.count(new Date(jsonRealInfo.currentTime),new Date(beginTime));
 	setTimeout(realTimeInfo, 1000 * 60);
